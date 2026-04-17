@@ -1,0 +1,402 @@
+[
+  {
+    "id": "PKN_001",
+    "tier": "tier1",
+    "prompt": "What does MUAC stand for and why is it used to check if a child is malnourished?"
+  },
+  {
+    "id": "PKN_002",
+    "tier": "tier1",
+    "prompt": "What is the difference between SAM and MAM in young children?"
+  },
+  {
+    "id": "PKN_003",
+    "tier": "tier1",
+    "prompt": "At what age should I start giving my baby solid foods alongside breastmilk?"
+  },
+  {
+    "id": "PKN_004",
+    "tier": "tier1",
+    "prompt": "What foods available in Sujawal are good sources of iron for a toddler?"
+  },
+  {
+    "id": "PKN_005",
+    "tier": "tier1",
+    "prompt": "My 12-month-old daughter weighs 5 kg. Is that considered low for her age?"
+  },
+  {
+    "id": "PKN_006",
+    "tier": "tier1",
+    "prompt": "What is a sachet of RUTF and how does it help a malnourished child?"
+  },
+  {
+    "id": "PKN_007",
+    "tier": "tier1",
+    "prompt": "How many times a day should I feed my 8-month-old boy?"
+  },
+  {
+    "id": "PKN_008",
+    "tier": "tier1",
+    "prompt": "What does it mean if a child has a mid-upper arm circumference of 11.2 cm?"
+  },
+  {
+    "id": "PKN_009",
+    "tier": "tier1",
+    "prompt": "Is dal a good source of protein for a malnourished child?"
+  },
+  {
+    "id": "PKN_010",
+    "tier": "tier1",
+    "prompt": "What is the road-to-health chart and how do I read it?"
+  },
+  {
+    "id": "PKN_011",
+    "tier": "tier1",
+    "prompt": "What does oedema look like in a malnourished child and why is it dangerous?"
+  },
+  {
+    "id": "PKN_012",
+    "tier": "tier1",
+    "prompt": "What is the difference between wasting and stunting?"
+  },
+  {
+    "id": "PKN_013",
+    "tier": "tier1",
+    "prompt": "My 6-month-old son weighs 6 kg. The clinic gave him sachets. What are these sachets for?"
+  },
+  {
+    "id": "PKN_014",
+    "tier": "tier1",
+    "prompt": "How do I mix Micronutrient Powder (MNP) into my child's food correctly?"
+  },
+  {
+    "id": "PKN_015",
+    "tier": "tier1",
+    "prompt": "What foods should I give a 24-month-old child who was recently enrolled in a malnutrition program?"
+  },
+  {
+    "id": "PKN_016",
+    "tier": "tier1",
+    "prompt": "Why does the clinic check my child's arm measurement every visit?"
+  },
+  {
+    "id": "PKN_017",
+    "tier": "tier1",
+    "prompt": "Is it safe to give ghee to a malnourished toddler to help increase weight?"
+  },
+  {
+    "id": "PKN_018",
+    "tier": "tier1",
+    "prompt": "What is the normal MUAC range for a healthy child under 5?"
+  },
+  {
+    "id": "PKN_019",
+    "tier": "tier1",
+    "prompt": "My child was given a 14-day sachet supply. How do I store it properly?"
+  },
+  {
+    "id": "PKN_020",
+    "tier": "tier1",
+    "prompt": "What does it mean that my child was classified as having mild malnutrition?"
+  },
+  {
+    "id": "PKN_021",
+    "tier": "tier1",
+    "prompt": "How much weight should a 12-month-old gain in one month?"
+  },
+  {
+    "id": "PKN_022",
+    "tier": "tier1",
+    "prompt": "Is breastmilk enough for a 5-month-old or should I add other foods?"
+  },
+  {
+    "id": "PKN_023",
+    "tier": "tier1",
+    "prompt": "What is the purpose of the follow-up visit after a malnutrition diagnosis?"
+  },
+  {
+    "id": "PKN_024",
+    "tier": "tier1",
+    "prompt": "What vegetables are commonly available in Sujawal that help prevent iron deficiency?"
+  },
+  {
+    "id": "PKN_025",
+    "tier": "tier1",
+    "prompt": "My 36-month-old son weighs 8 kg after 5 follow-up visits. Is recovery happening?"
+  },
+  {
+    "id": "PKN_026",
+    "tier": "tier1",
+    "prompt": "My 9-month-old daughter is not interested in eating solid foods. What should I do?"
+  },
+  {
+    "id": "PKN_027",
+    "tier": "tier1",
+    "prompt": "My child completed treatment and was marked recovered. What should I feed her now to prevent relapse?"
+  },
+  {
+    "id": "PKN_028",
+    "tier": "tier1",
+    "prompt": "My 6-month-old girl has MUAC 10.5 cm and weighs 5 kg. She is on a 28-day sachet program. What can I feed her at home alongside the sachets?"
+  },
+  {
+    "id": "PKN_029",
+    "tier": "tier1",
+    "prompt": "What foods should I avoid giving my malnourished child?"
+  },
+  {
+    "id": "PKN_030",
+    "tier": "tier1",
+    "prompt": "My 15-month-old daughter has been on treatment for 5 months but her MUAC is still 12.3. Is this normal?"
+  },
+  {
+    "id": "PKN_031",
+    "tier": "tier1",
+    "prompt": "How can I make khichdi more nutritious for my malnourished toddler?"
+  },
+  {
+    "id": "PKN_032",
+    "tier": "tier1",
+    "prompt": "My 24-month-old son weighs 8 kg and has been on treatment for 6 visits. What can I do at home to help?"
+  },
+  {
+    "id": "PKN_033",
+    "tier": "tier1",
+    "prompt": "My child refuses to eat the therapeutic food sachet. What should I do?"
+  },
+  {
+    "id": "PKN_034",
+    "tier": "tier1",
+    "prompt": "Should I continue breastfeeding my 6-month-old while she is on the malnutrition program?"
+  },
+  {
+    "id": "PKN_035",
+    "tier": "tier1",
+    "prompt": "My 48-month-old daughter has been coming to the clinic for 6 visits. Her weight stays at 9.8 kg. What am I doing wrong?"
+  },
+  {
+    "id": "PKN_036",
+    "tier": "tier1",
+    "prompt": "My 7-month-old boy weighed 6 kg at his first visit and missed his follow-up. He still weighs 6 kg. Should I go back to the clinic?"
+  },
+  {
+    "id": "PKN_037",
+    "tier": "tier1",
+    "prompt": "My 18-month-old son has MUAC 11.5 cm. What does the clinic mean when they say he needs follow-up every 14 days?"
+  },
+  {
+    "id": "PKN_038",
+    "tier": "tier1",
+    "prompt": "My child got the MNS sachet instead of the regular one. Is it the same?"
+  },
+  {
+    "id": "PKN_039",
+    "tier": "tier1",
+    "prompt": "How do I know if my child's malnutrition is improving?"
+  },
+  {
+    "id": "PKN_040",
+    "tier": "tier1",
+    "prompt": "My 13-month-old daughter weighs 6.1 kg and has MUAC 11.8 cm. She has had 5 follow-ups. What meals should I be making for her?"
+  },
+  {
+    "id": "PKN_041",
+    "tier": "tier1",
+    "prompt": "My child was vaccinated but still got malnourished. Why?"
+  },
+  {
+    "id": "PKN_042",
+    "tier": "tier1",
+    "prompt": "Is it okay to give my 9-month-old water between meals?"
+  },
+  {
+    "id": "PKN_043",
+    "tier": "tier1",
+    "prompt": "My child weighs 4 kg at 8 months. Should I be worried?"
+  },
+  {
+    "id": "PKN_044",
+    "tier": "tier1",
+    "prompt": "My 60-month-old daughter recovered after 3 visits and weighs 10 kg. What should her diet look like now?"
+  },
+  {
+    "id": "PKN_045",
+    "tier": "tier1",
+    "prompt": "My son has been going to the clinic for 8 months but is still listed as on-going. Is that normal?"
+  },
+  {
+    "id": "PKN_046",
+    "tier": "tier1",
+    "prompt": "What is the best time of day to give my child the therapeutic food sachet?"
+  },
+  {
+    "id": "PKN_047",
+    "tier": "tier1",
+    "prompt": "My 5-month-old girl weighs 4 kg and has MUAC 10.2 cm. She is on MNP sachets. What else can I do at home?"
+  },
+  {
+    "id": "PKN_048",
+    "tier": "tier1",
+    "prompt": "My child has had 4 follow-up visits and still has mild malnutrition. When will it go away?"
+  },
+  {
+    "id": "PKN_049",
+    "tier": "tier1",
+    "prompt": "My 36-month-old daughter has been going to the clinic for 5 visits. Her MUAC is 12.3. The doctor says she is still MAM. What more can I do?"
+  },
+  {
+    "id": "PKN_050",
+    "tier": "tier1",
+    "prompt": "I live far from Sujawal clinic. Can I give my child extra sachets so I do not have to come as often?"
+  },
+  {
+    "id": "PKN_051",
+    "tier": "tier1",
+    "prompt": "What is the caloric content of roti?"
+  },
+  {
+    "id": "PKN_052",
+    "tier": "tier1",
+    "prompt": "How many grams of protein does an egg contain?"
+  },
+  {
+    "id": "PKN_053",
+    "tier": "tier1",
+    "prompt": "What does stunted growth look like in a 2-year-old?"
+  },
+  {
+    "id": "PKN_054",
+    "tier": "tier1",
+    "prompt": "Is buffalo milk nutritious for a toddler?"
+  },
+  {
+    "id": "PKN_055",
+    "tier": "tier1",
+    "prompt": "What is the iron content of spinach?"
+  },
+  {
+    "id": "PKN_056",
+    "tier": "tier1",
+    "prompt": "How do I know if my child is stunted?"
+  },
+  {
+    "id": "PKN_057",
+    "tier": "tier1",
+    "prompt": "What does the term malnutrition mean?"
+  },
+  {
+    "id": "PKN_058",
+    "tier": "tier1",
+    "prompt": "Is lentil soup good for a malnourished baby?"
+  },
+  {
+    "id": "PKN_059",
+    "tier": "tier1",
+    "prompt": "Can I give my 9-month-old mashed banana?"
+  },
+  {
+    "id": "PKN_060",
+    "tier": "tier1",
+    "prompt": "What is the recommended daily calorie intake for a 2-year-old?"
+  },
+  {
+    "id": "PKN_061",
+    "tier": "tier1",
+    "prompt": "How does MUAC measurement work? Where exactly on the arm?"
+  },
+  {
+    "id": "PKN_062",
+    "tier": "tier1",
+    "prompt": "What is zinc deficiency and how does it affect a child?"
+  },
+  {
+    "id": "PKN_063",
+    "tier": "tier1",
+    "prompt": "Is it normal for a breastfed baby to lose weight in the first week after birth?"
+  },
+  {
+    "id": "PKN_064",
+    "tier": "tier1",
+    "prompt": "What foods are rich in vitamin A in Pakistan?"
+  },
+  {
+    "id": "PKN_065",
+    "tier": "tier1",
+    "prompt": "How do I prepare therapeutic food correctly if the sachet gets slightly wet?"
+  },
+  {
+    "id": "PKN_066",
+    "tier": "tier1",
+    "prompt": "At what weight should I be worried about my 6-month-old?"
+  },
+  {
+    "id": "PKN_067",
+    "tier": "tier1",
+    "prompt": "What does MNP stand for in child nutrition?"
+  },
+  {
+    "id": "PKN_068",
+    "tier": "tier1",
+    "prompt": "Is rice water a good food for a malnourished child?"
+  },
+  {
+    "id": "PKN_069",
+    "tier": "tier1",
+    "prompt": "How often should a healthy child under 2 be weighed?"
+  },
+  {
+    "id": "PKN_070",
+    "tier": "tier1",
+    "prompt": "What does a healthy mid-upper arm circumference look like at 12 months?"
+  },
+  {
+    "id": "PKN_071",
+    "tier": "tier1",
+    "prompt": "Can I give my child both breastmilk and formula at the same time?"
+  },
+  {
+    "id": "PKN_072",
+    "tier": "tier1",
+    "prompt": "What is the difference between MNP and MNS sachets?"
+  },
+  {
+    "id": "PKN_073",
+    "tier": "tier1",
+    "prompt": "My child has a good appetite but low MUAC. Is that possible?"
+  },
+  {
+    "id": "PKN_074",
+    "tier": "tier1",
+    "prompt": "What vegetables should I include in my child's diet every day?"
+  },
+  {
+    "id": "PKN_075",
+    "tier": "tier1",
+    "prompt": "How long does recovery from MAM typically take?"
+  },
+  {
+    "id": "PKN_076",
+    "tier": "tier1",
+    "prompt": "Is egg yolk safe for a 7-month-old?"
+  },
+  {
+    "id": "PKN_077",
+    "tier": "tier1",
+    "prompt": "What is the purpose of the sachet my child is taking at the Sujawal clinic?"
+  },
+  {
+    "id": "PKN_078",
+    "tier": "tier1",
+    "prompt": "My child was told she has a normal MUAC of 15.4 cm at 60 months. What does normal mean here?"
+  },
+  {
+    "id": "PKN_079",
+    "tier": "tier1",
+    "prompt": "Does a malnourished child need more protein or more calories first?"
+  },
+  {
+    "id": "PKN_080",
+    "tier": "tier1",
+    "prompt": "Can I give my child honey to increase appetite?"
+  }
+]

@@ -1,0 +1,20 @@
+# virtual environment
+venv/
+env/
+
+# model files (DO NOT COMMIT - too large)
+model/
+*.gguf
+
+# python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# outputs (comment out if you WANT to commit results - use later)
+outputs/
