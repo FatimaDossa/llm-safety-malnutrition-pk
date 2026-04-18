@@ -7,63 +7,60 @@ Habib University — CS 435 · April 2025
 
 ## Overview
 
-Malnutrition affects **37.6% of children under five in Pakistan**, yet most Large Language Models (LLMs) are not calibrated for local healthcare contexts.
+This project evaluates how safety guardrails affect the performance of a local Large Language Model in generating health-related guidance for caregivers in rural Pakistan. The study compares a base model against a safety-calibrated version using structured prompts across multiple clinical tiers derived from real-world malnutrition contexts.
 
-This project evaluates whether **safety-calibrated LLM systems** can reduce:
-
-- Unsafe medical advice
-- Hallucinations
-
-**without degrading helpfulness** in malnutrition-related guidance for caregivers in rural Sindh.
+The goal is to analyze whether safety interventions reduce unsafe advice and hallucinations without significantly degrading helpfulness.
 
 ---
 
-## Research Question
+## Model
+
+This project uses:
+
+- **Llama 3.2 3B Instruct** (quantized GGUF version)
+
+The model is run locally using `llama-cpp-python` for reproducible and low-resource inference.
+
+---
+
+## Research Objective
 
 > Can safety-calibrated LLMs reduce unsafe advice and hallucinations in malnutrition education for caregivers in rural Sindh without degrading helpfulness?
 
 ---
 
-## Experimental Design
+## Experimental Setup
 
-Four-condition ablation study:
+The evaluation is conducted using two conditions:
 
-| Condition | System           | Description                                           | Hypothesis                                 |
-|-----------|------------------|-------------------------------------------------------|--------------------------------------------|
-| A         | Baseline         | Plain LLM, no guardrails, no retrieval                | Highest unsafe advice and hallucinations   |
-| B         | Guardrails       | Safety prompt with restrictions and referral triggers | Lower unsafe advice, possible over-refusal |
-| C         | RAG              | Retrieval from nutrition knowledge base               | Lower hallucination rate                   |
-| D         | RAG + Guardrails | Combined system                                       | Best safety-usefulness tradeoff            |
+| Condition | Description |
+|-----------|-------------|
+| A         | Base model with no system prompt or safety constraints |
+| B         | Base model with safety guardrails applied through a system prompt |
 
-> ⚠️ Due to time constraints, Conditions C and D may be partially implemented or treated as future work.
-
----
-
-## Prompt Dataset
-
-- **200 prompts** derived from real CMAM clinical records (Sujawal, Sindh)
-- Organized into **3 tiers**:
-  - **Tier 1** — Safe / general nutrition queries
-  - **Tier 2** — Ambiguous / mild symptoms
-  - **Tier 3** — High-risk / medical scenarios
+Each condition is evaluated on identical prompts across multiple tiers of medical/nutrition-related scenarios.
 
 ---
 
 ## Evaluation Metrics
 
-Each model response is manually annotated using:
+| Metric | Name                           | Description                        |
+|--------|--------------------------------|------------------------------------|
+| UAR    | Unsafe Advice Rate             | Harmful or incorrect guidance      |
+| HR     | Hallucination Rate             | Unsupported or fabricated claims   |
+| ORR    | Over-Refusal Rate              | Unnecessary refusal to answer      |
+| US     | Usefulness Score               | Practical, actionable value        |
+| SUT    | Safety–Usefulness Tradeoff     | Composite metric                   |
 
-| Metric | Name                         | Description                          |
-|--------|------------------------------|--------------------------------------|
-| UAR    | Unsafe Advice Rate           | Harmful or incorrect guidance        |
-| HR     | Hallucination Rate           | Unsupported or fabricated claims     |
-| ORR    | Over-Refusal Rate            | Unnecessary refusal to answer        |
-| US     | Usefulness Score             | Practical, actionable value          |
-| SUT    | Safety–Usefulness Tradeoff   | Composite metric                     |
+---
 
-**Ground truth anchored to:**
-- WHO 2023 Wasting Guidelines
-- Pakistan National Nutrition Survey (NNS) 2018
+## Dataset
+
+The dataset consists of structured prompts derived from malnutrition-related scenarios in Pakistan, categorized into tiers representing increasing sensitivity and risk levels.
+
+- **Tier 1** — Safe / general nutrition queries
+- **Tier 2** — Ambiguous / mild symptoms
+- **Tier 3** — High-risk / medical scenarios
 
 ---
 
@@ -73,73 +70,80 @@ Each model response is manually annotated using:
 project/
 │
 ├── src/
-│   ├── test_load.py
-│   ├── run_fake.py              # baseline condition (A)
-│   ├── run_guardrails.py        # guardrails condition (B)
-│   └── utils.py                 # API calls
-│
-├── data/
-│   ├── prompts.json
-│   ├── outputs.json
-│   └── outputs_guardrails.json
+│   ├── run_condition_A.py       # baseline condition (A)
+│   ├── run_condition_B.py       # guardrails condition (B)
+│   └── utils.py                 # shared utilities
 │
 ├── prompts/
 │   └── guardrails.txt
 │
-├── .env
+├── outputs/
+│
+├── model/                       # excluded from repository
+├── venv/                        # excluded from repository
+│
+├── requirements.txt
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## Setup
+## Setup Instructions
 
-### 1. Install dependencies
+### 1. Clone the repository
 
 ```bash
-pip install requests python-dotenv
+git clone <repo-url>
+cd genai_project
 ```
 
-### 2. Add API key
+### 2. Create virtual environment
 
-Create a `.env` file in the project root:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
-```env
-OPENAI_API_KEY=your-api-key
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Add model file
+
+Place the model file at:
+
+```
+model/Llama-3.2-3B-Instruct-Q4_K_M.gguf
 ```
 
 ---
 
-## Running Experiments
+## Running the Experiment
 
-### Baseline — Condition A
+**Condition A** — Base model, no guardrails:
 
 ```bash
-python src/run_fake.py
+python src/run_condition_A.py
 ```
 
-Output saved to `data/outputs.json`
+**Condition B** — Base model with safety guardrails:
+
+```bash
+python src/run_condition_B.py
+```
+
+Outputs are saved to the `outputs/` directory.
 
 ---
 
-### Guardrails — Condition B
+## Notes
 
-```bash
-python src/run_guardrails.py
-```
-
-Output saved to `data/outputs_guardrails.json`
-
----
-
-## Guardrails Design
-
-Guardrails are implemented via **prompt engineering**, including:
-
-- Diagnosis restrictions
-- Referral triggers (e.g., *"consult a doctor"*)
-- Safety constraints for medical advice
-- Controlled refusal behavior
+- The model runs locally and does not require external APIs
+- The system is designed for reproducibility and low-resource environments
+- Inference speed depends on CPU performance due to quantized local execution
 
 ---
 
@@ -154,28 +158,6 @@ Guardrails are implemented via **prompt engineering**, including:
 
 ---
 
-## Success Criteria
-
-- ≥ 30% reduction in Unsafe Advice Rate
-- Decrease in Hallucination Rate with RAG
-- ≤ 10–15% increase in Over-Refusal Rate
-- Highest SUT score for combined system (Condition D)
-- Inter-annotator agreement **κ ≥ 0.70**
-
----
-
-## Deliverables
-
-- [ ] Annotated dataset (200 prompts)
-- [ ] Model output logs (all conditions)
-- [ ] Evaluation scripts and scoring pipeline
-- [ ] Ablation results table (UAR, HR, ORR, US, SUT)
-- [ ] Failure mode taxonomy
-- [ ] Fairness analysis
-- [ ] Research paper (8–10 pages)
-
----
-
 ## Target Users & Impact
 
 - Caregivers in low-literacy, rural Pakistani settings
@@ -186,10 +168,16 @@ Guardrails are implemented via **prompt engineering**, including:
 
 ## Future Work
 
-- [ ] Implement full RAG pipeline (Conditions C & D)
+- [ ] Implement full RAG pipeline
 - [ ] Expand dataset beyond Sujawal region
 - [ ] Integrate multilingual support (Urdu / Sindhi)
 - [ ] Conduct real-world deployment evaluation
+
+---
+
+## License
+
+This project is intended for academic use only.
 
 ---
 
