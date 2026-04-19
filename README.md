@@ -1,7 +1,7 @@
 # Calibrating Safe and Useful LLMs for Malnutrition Education in Pakistan
 
 **Azkaa Nasir (an08017)** · **Fatima Dossa (fd08024)**  
-Habib University — CS 435 · April 2025
+Habib University — CS 435 · April 2026
 
 ---
 
@@ -181,4 +181,4 @@ This project is intended for academic use only.
 
 ---
 
-*Habib University · CS 435 · April 2025*
+*Habib University · CS 435 · April 2026*
