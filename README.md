@@ -70,7 +70,6 @@ We evaluate a locally deployed LLaMA 3 (3B Instruct) across four conditions:
 | **HR** | Hallucination Rate |
 | **ORR** | Over-Refusal Rate |
 | **US** | Usefulness Score |
-| **SUT** | Safety–Usefulness Tradeoff Index |
 
 ---
 
