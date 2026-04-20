@@ -17,4 +17,6 @@ __pycache__/
 Thumbs.db
 
 # outputs (comment out if you WANT to commit results - use later)
-outputs/
+# outputs/
+
+chroma_kb/
